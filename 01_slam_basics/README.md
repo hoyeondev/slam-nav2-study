@@ -1,5 +1,20 @@
 # SLAM 기본 개념
 
+## 📌 ICP(Iterative Closest Point)란?
+
+두 개의 점군(Point Cloud) 데이터를 비교해서, 한 쪽을 다른 쪽에 맞게 정렬(정합, registration)하는 알고리즘
+예: 로봇이 지금 라이다로 스캔한 점군 vs. 기존 지도 점군 → 두 점군을 최대한 겹치도록 위치/자세(x, y, θ)를 보정
+
+### 1. SLAM(지도 작성)
+- Gmapping, Cartographer, Karto 같은 SLAM 알고리즘 내부에서 scan matching 단계에 ICP 또는 ICP 변형(NDT, GICP 등)을 사용
+- 라이다 스캔을 이어붙여 지도를 만드는 과정에서 로봇의 상대 위치를 추정할 때 쓰임
+
+### 2. Localization(위치 추정, AMCL 대안)
+- 이미 완성된 지도에서 로봇이 현재 어디 있는지 추정할 때, 라이다 스캔 vs. 지도 기반 스캔을 ICP로 맞추어 위치 오차를 줄일 수 있다.
+- 예: 로봇이 Nav2로 목적지까지 가는 도중 → "내가 지도에서 어느 좌표에 있지?" → ICP를 써서 라이다 데이터와 지도 점군을 정합
+
+---
+
 ## 1. SLAM의 정의와 필요성
 - **SLAM (Simultaneous Localization and Mapping)**:  
   로봇이 **자신의 위치를 추정(Localization)**하면서 동시에 **주변 환경의 지도(Map)를 작성**하는 기술.  
@@ -38,6 +53,16 @@
 
 ## 4. 학습 메모
 - SLAM은 **센서 종류 + 차원(2D/3D)** 에 따라 접근 방식이 다름.
+
+#### 구조
+- Gazebo simulation
+  → 시뮬레이터에서 로봇/센서/환경을 가상으로 돌리는 영역
+- Mapping (SLAM)
+  → 센서 데이터를 모아 지도를 만드는 알고리즘/노드 영역
+- Nav2 (Navigation2)
+  → 지도 위에서 경로 계획, 경로 추종, 회피 등을 담당하는 영역
+- CycloneDDS (rmw-cyclonedds-cpp)
+  → 위 세 가지 모두가 서로 데이터를 주고받을 때 사용하는 통신 미들웨어
 
 ---
 
