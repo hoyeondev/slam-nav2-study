@@ -40,7 +40,7 @@ sudo apt install ros-humble-turtlebot3-gazebo ros-humble-turtlebot3-simulations
 
 ---
 
-## 2. gazebo 실행이 안되는 문제 (환경변수 꼬임)
+## 1-1. gazebo 실행이 안되는 문제 (환경변수 꼬임)
 
 <details>
 <summary>내용보기 🔽</summary>
