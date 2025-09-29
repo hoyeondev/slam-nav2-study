@@ -20,17 +20,10 @@
 - RViz에서 센서 데이터 시각화
 - ros2 launch로 노드 실행법
 
-### ✅ 03_mapping(지도 작성)
-- SLAM Toolbox, Cartographer 실습
-- rosbag 데이터로 오프라인 맵핑
-- map.pgm, map.yaml 생성 과정 기록
-
-### ✅ 04_localization(위치 추정)
-- AMCL 원리와 실행 방법
-- Particle Filter 개념 정리
-- RViz에서 위치 추정 테스트
-
-### ✅ 05_navigation(Nav2)
+### ✅ 03_navigation(Nav2)
 - Nav2 기본 구조 (BT, planner, controller, recovery)
 - global planner vs local planner 차이
 - goal pose 지정 → 경로 계획 및 주행 실습
+
+### ✅ 03_notes
+ - 프로젝트 관련 학습 내용 기록
