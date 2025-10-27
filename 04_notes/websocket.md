@@ -14,6 +14,9 @@ Spring Boot 서버에서 주문(WebSocket)을 받아 ROS2 노드로 전달.
 
 ## 주요 명령
 ```bash
+# 패키지 설치
+sudo apt install ros-humble-rosbridge-server
+
 # ROS2 rosbridge 실행
 ros2 launch rosbridge_server rosbridge_websocket_launch.xml
 
