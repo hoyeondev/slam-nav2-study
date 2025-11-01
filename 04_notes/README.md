@@ -12,3 +12,5 @@
 - **[ROS2 주문 수신 노드 구현 및 실행 가이드](/04_notes/251027.md)**
 
 - **[ROS2 ↔ Spring Boot WebSocket 연동 가이드](/04_notes/websocket.md)**
+
+- **[RPi Pico micro-ROS / micropython](/04_notes/251101.md/)**
