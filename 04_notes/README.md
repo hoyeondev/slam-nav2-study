@@ -13,4 +13,4 @@
 
 - **[ROS2 ↔ Spring Boot WebSocket 연동 가이드](/04_notes/websocket.md)**
 
-- **[RPi Pico micro-ROS / micropython](/04_notes/251101.md/)**
+- **[Raspberry Pi Pico + micro-ROS + RFID Reader (MFRC522)](/04_notes/251101.md/)**
