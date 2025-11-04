@@ -14,3 +14,5 @@
 - **[ROS2 ↔ Spring Boot WebSocket 연동 가이드](/04_notes/websocket.md)**
 
 - **[Raspberry Pi Pico + micro-ROS + RFID Reader (MFRC522)](/04_notes/251101.md/)**
+
+- **[Raspberry Pi 4 블루투스 스피커 연결 튜토리얼](/04_notes/251104.md)**
