@@ -9,7 +9,7 @@
 
 - **[라즈베리파이4 + 터치스크린 gui 실행 가이드](/04_notes/251023.md)**
 
-- **[ROS2 주문 수신 노드 구현 및 실행 가이드](/04_notes/251027.md)**
+- **[ROS2 노드 패키지 구현 및 실행 가이드](/04_notes/251027.md)**
 
 - **[ROS2 ↔ Spring Boot WebSocket 연동 가이드](/04_notes/websocket.md)**
 
